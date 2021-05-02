@@ -85,5 +85,7 @@ wordlist = [
     'motivatie',
     'beste',
     'toevoegen',
-    'kent'
+    'kent',
+    'terzijde',
+    'gelegd'
 ]

@@ -1,2 +1,5 @@
 output.*
 files/*.xlsx
+*.png
+.vscode
+__pycache__
