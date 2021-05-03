@@ -28,6 +28,7 @@ def checkForOutput():
 def processFile():
     print('Processing "output.csv..."')
     df = pd.read_csv(OUTPUT_CSV)
+    print('Eliminating possible duplicates...')
     df = df.drop_duplicates(subset='Team Request Id', keep="first")
     l = []
 
