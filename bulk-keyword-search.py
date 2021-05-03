@@ -78,8 +78,8 @@ def processFiles():
     csv = pd.read_csv(OUTPUT_CSV)
     csv.to_excel(OUTPUT_XSLX, index=False)
 
-    print('Processing completed. %d file(s) processed, %d hit(s) found.' %
-          (num_files, counter))
+    print('Processing completed. %d file(s) processed, %d hit(s) found for keywords "%s" in column "%s".' %
+          (num_files, counter, CHOICE_QUERY, COLUMNS[CHOICE_COLUMN]))
 
 
 # ----- MAIN ------
