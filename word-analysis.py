@@ -28,8 +28,15 @@ def checkForOutput():
 def processFile():
     print('Processing "output.csv..."')
     df = pd.read_csv(OUTPUT_CSV)
-    print('Eliminating possible duplicates...')
+    rows_df = df.shape[0]
+
     df = df.drop_duplicates(subset='Team Request Id', keep="first")
+    rows_df_no_dupes = df.shape[0]
+
+    print('Eliminating possible duplicates...')
+    eliminated = rows_df - rows_df_no_dupes
+    print('Eliminated %d rows that were duplicates.' % eliminated)
+
     l = []
 
     for i in df.index:
