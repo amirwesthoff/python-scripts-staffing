@@ -1,2 +1,2 @@
 # Usage
-Put the files on which you want to perform the bulk keyword search in this directory.
+Put the files on which you want to perform the bulk keyword search in this directory. If you want, you can create a subfolder in which you can put files that should not be included in the bulk keyword search.
